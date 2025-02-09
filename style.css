@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+label,
+input,
+button,
+select {
+  display: block;
+  width: 100%;
+}
+
+input,
+select,
+button {
+  margin-bottom: 1.5rem;
+  /* reset */
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  font-size: 1rem;
+  border-radius: 0;
+}
+select.minimal {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+  background-image: linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.not-needed,
+#error-msg {
+  color: red;
+}
+
+button {
+  min-height: 3rem;
+  color: #fff;
+  background-color: #222;
+}
+
+select,
+input {
+  color: #222;
+  min-height: 2em;
+  padding: 0 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .form {
+    display: flex;
+    align-items: end;
+    gap: 2rem;
+  }
+
+  button {
+    padding: 0 2rem;
+    min-height: 2.5rem;
+    display: block;
+    width: 100%;
+    border: 0;
+  }
+  .feild-group {
+    width: 25%;
+  }
+}

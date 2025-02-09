@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+
+
+    <title>JavaScript | Fruit Inventory | By: Ishmael Sunday</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Fruit Inventory</h1>
+        <p> Poputate the table below by adding fruits, cost and specifying if fruit is needed.</p>
+        <p id="error-msg"></p>
+        <div class="form">
+            <div class="feild-group">
+                <label for="fruit">Fruit:</label>
+                <input type="text" id="fruit" required placeholder="Enter fruit">
+            </div>
+            <div class="feild-group">
+                <label for="cost">Cost of Fruit:</label>
+                <input type="number" id="cost" required placeholder="Enter cost">
+            </div>
+            <div class="feild-group">
+                <label for="needed">Is the fruit needed?</label>
+                <select id="needed" class="minimal">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="feild-group">
+                <button onclick="addFruit()">Add Fruit</button>
+            </div>
+        </div>
+        <h3>Fruit List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fruit</th>
+                    <th>Cost</th>
+                    <th>Needed</th>
+                </tr>
+            </thead>
+            <tbody id="fruit-list">
+                <!-- Fruit entries will be displayed here -->
+            </tbody>
+        </table>
+
+    </main>
+</body>
+
+</html>
