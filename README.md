@@ -26,5 +26,6 @@ I had a compaliblity issue with styling of the `select input ` . I didn't includ
 ## Author
 
 Ishmael Sunday
-[My github](https://www.github.com/okayishmael)
-[My Linkedin](https://www.linkedin.com/in/ishmael-sunday)
+
+- [My github](https://www.github.com/okayishmael)
+- [My Linkedin](https://www.linkedin.com/in/ishmael-sunday)
