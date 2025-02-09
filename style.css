@@ -20,6 +20,9 @@ select {
   width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
 input,
 select,
 button {
