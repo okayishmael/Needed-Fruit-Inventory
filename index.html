@@ -21,13 +21,13 @@
         <h1>Fruit Inventory</h1>
         <p> Poputate the table below by adding fruits, cost and specifying if fruit is needed.</p>
         <p id="error-msg"></p>
-        <div class="form">
+        <form id="form" class="form">
             <div class="feild-group">
                 <label for="fruit">Fruit:</label>
                 <input type="text" id="fruit" required placeholder="Enter fruit">
             </div>
             <div class="feild-group">
-                <label for="cost">Cost of Fruit:</label>
+                <label for="cost">Cost of Fruit (Numbers only):</label>
                 <input type="number" id="cost" required placeholder="Enter cost">
             </div>
             <div class="feild-group">
@@ -38,9 +38,9 @@
                 </select>
             </div>
             <div class="feild-group">
-                <button onclick="addFruit()">Add Fruit</button>
+                <button type="submit" onclick="addFruit()">Add Fruit</button>
             </div>
-        </div>
+        </form>
         <h3>Fruit List</h3>
         <table>
             <thead>
